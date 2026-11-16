@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover affordable, high-quality vacation destinations and stay options for your next trip. Explore curated beach escapes, city getaways, and nature retreats."
+    />
+    <title>TravelWell | Affordable Vacation Picks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container nav-wrap">
+          <a href="#top" class="brand" aria-label="TravelWell home">
+            <span class="brand-mark">TW</span>
+            <span>TravelWell</span>
+          </a>
+
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="#destinations">Destinations</a>
+            <a href="#stays">Stay Options</a>
+            <a href="#planner">Trip Planner</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <button
+            type="button"
+            class="theme-toggle"
+            aria-label="Toggle dark mode"
+            aria-pressed="false"
+          >
+            <span class="toggle-track">
+              <span class="toggle-thumb"></span>
+            </span>
+            <span class="toggle-label">Dark mode</span>
+          </button>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">Updated vacation picks</p>
+              <h1>Find an affordable trip that feels unforgettable.</h1>
+              <p class="lead">
+                Explore the best current vacation destinations with quality stays,
+                great neighborhoods, and smart budget-friendly options that feel
+                worth every dollar.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#destinations" class="button button-primary">Explore destinations</a>
+                <a href="#stays" class="button button-secondary">Compare stays</a>
+              </div>
+
+              <ul class="hero-stats" aria-label="Travel statistics">
+                <li>
+                  <strong>12+</strong>
+                  <span>curated getaway ideas</span>
+                </li>
+                <li>
+                  <strong>Budget-smart</strong>
+                  <span>well-rated stays</span>
+                </li>
+                <li>
+                  <strong>Top value</strong>
+                  <span>great locations</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hero-visual" aria-label="Illustrated travel destination highlights">
+              <div class="visual-card visual-card-main">
+                <span class="mini-label">Top rated</span>
+                <h2>Barcelona</h2>
+                <p>Beach + city energy + walkable neighborhoods</p>
+                <div class="visual-meta">
+                  <span>From $140/night</span>
+                  <span>4.8/5 value</span>
+                </div>
+              </div>
+              <div class="visual-card visual-card-small">
+                <span>Best for</span>
+                <strong>Sun, food, culture</strong>
+              </div>
+              <div class="floating-badge">Book smart</div>
+            </div>
+          </div>
+        </section>
+
+        <section id="destinations" class="section">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Top vacation picks</p>
+              <h2>Best destinations for quality, comfort, and value</h2>
+            </div>
+
+            <div class="filter-row" aria-label="Destination filters">
+              <button type="button" class="filter-btn is-active" data-filter="all">All trips</button>
+              <button type="button" class="filter-btn" data-filter="beach">Beach</button>
+              <button type="button" class="filter-btn" data-filter="city">City</button>
+              <button type="button" class="filter-btn" data-filter="nature">Nature</button>
+              <button type="button" class="filter-btn" data-filter="budget">Budget</button>
+            </div>
+
+            <div class="destination-grid">
+              <article class="destination-card" data-category="beach budget">
+                <div class="card-top">
+                  <span class="destination-tag">Beach + value</span>
+                  <span class="rating">4.8</span>
+                </div>
+                <h3>Lisbon Coast, Portugal</h3>
+                <p class="location-line">Cascais and Costa da Caparica</p>
+                <p>
+                  Great for travelers who want ocean views, easy transit, and a relaxed coastal feel without paying luxury prices.
+                </p>
+                <ul class="feature-list">
+                  <li>Avg. nightly stay: $120–$210</li>
+                  <li>Hotel: boutique seaside hotel</li>
+                  <li>Airbnb: apartment with terrace</li>
+                </ul>
+                <div class="card-footer">
+                  <span>Best for: easy beach getaway</span>
+                  <span class="price">$$</span>
+                </div>
+              </article>
+
+              <article class="destination-card" data-category="city budget">
+                <div class="card-top">
+                  <span class="destination-tag">City escape</span>
+                  <span class="rating">4.7</span>
+                </div>
+                <h3>Seville, Spain</h3>
+                <p class="location-line">Historic center and lively barrios</p>
+                <p>
+                  Warm weather, walkable streets, and strong value for food, culture, and boutique accommodations.
+                </p>
+                <ul class="feature-list">
+                  <li>Avg. nightly stay: $110–$180</li>
+                  <li>Hotel: courtyard guesthouse</li>
+                  <li>Airbnb: stylish loft near tapas bars</li>
+                </ul>
+                <div class="card-footer">
+                  <span>Best for: culture + food</span>
+                  <span class="price">$</span>
+                </div>
+              </article>
+
+              <article class="destination-card" data-category="nature beach">
+                <div class="card-top">
+                  <span class="destination-tag">Nature + coast</span>
+                  <span class="rating">4.9</span>
+                </div>
+                <h3>Big Sur, California</h3>
+                <p class="location-line">Pacific cliffs and scenic drives</p>
+                <p>
+                  Ideal for travelers who want dramatic views, hiking, and slower, more restorative scenery.
+                </p>
+                <ul class="feature-list">
+                  <li>Avg. nightly stay: $220–$360</li>
+                  <li>Hotel: eco-lodge with mountain views</li>
+                  <li>Airbnb: cabin or cottage by the coast</li>
+                </ul>
+                <div class="card-footer">
+                  <span>Best for: scenic reset</span>
+                  <span class="price">$$$</span>
+                </div>
+              </article>
+
+              <article class="destination-card" data-category="city">
+                <div class="card-top">
+                  <span class="destination-tag">City culture</span>
+                  <span class="rating">4.8</span>
+                </div>
+                <h3>Barcelona, Spain</h3>
+                <p class="location-line">Beachfront and historic neighborhoods</p>
+                <p>
+                  A blend of architecture, local dining, and lively social energy that works for short or longer stays.
+                </p>
+                <ul class="feature-list">
+                  <li>Avg. nightly stay: $140–$260</li>
+                  <li>Hotel: design hotel near the Gothic Quarter</li>
+                  <li>Airbnb: apartment near Gràcia or beach</li>
+                </ul>
+                <div class="card-footer">
+                  <span>Best for: energetic city trip</span>
+                  <span class="price">$$</span>
+                </div>
+              </article>
+
+              <article class="destination-card" data-category="nature budget">
+                <div class="card-top">
+                  <span class="destination-tag">Outdoor escape</span>
+                  <span class="rating">4.7</span>
+                </div>
+                <h3>Banff, Canada</h3>
+                <p class="location-line">Rocky Mountain views and lake access</p>
+                <p>
+                  A strong pick for scenic hikes and alpine air, with many stays offering comfortable value outside peak season.
+                </p>
+                <ul class="feature-list">
+                  <li>Avg. nightly stay: $150–$250</li>
+                  <li>Hotel: mountain lodge</li>
+                  <li>Airbnb: chalet or cabin</li>
+                </ul>
+                <div class="card-footer">
+                  <span>Best for: nature lovers</span>
+                  <span class="price">$$</span>
+                </div>
+              </article>
+
+              <article class="destination-card" data-category="beach">
+                <div class="card-top">
+                  <span class="destination-tag">Warm water</span>
+                  <span class="rating">4.9</span>
+                </div>
+                <h3>Malta</h3>
+                <p class="location-line">Valletta, St. Julian’s, and the coast</p>
+                <p>
+                  A balanced option for sunshine, history, and resort-style livability with plenty of stylish lodgings.
+                </p>
+                <ul class="feature-list">
+                  <li>Avg. nightly stay: $170–$280</li>
+                  <li>Hotel: harbor-view suite</li>
+                  <li>Airbnb: sea-view apartment in old town</li>
+                </ul>
+                <div class="card-footer">
+                  <span>Best for: easy luxury feel</span>
+                  <span class="price">$$$</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="stays" class="section alt-section">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Stay smart</p>
+              <h2>Quality lodging options that match your travel style</h2>
+            </div>
+
+            <div class="stay-grid">
+              <div class="stay-card">
+                <div class="stay-icon" aria-hidden="true">🏨</div>
+                <h3>Hotels</h3>
+                <p>
+                  Best for convenience, reliable amenities, and easy airport or city-center access.
+                </p>
+                <ul>
+                  <li>Look for boutique properties with breakfast included</li>
+                  <li>Choose neighborhoods near transit or the beach</li>
+                  <li>Book 3–6 weeks ahead for better mid-range deals</li>
+                </ul>
+              </div>
+
+              <div class="stay-card">
+                <div class="stay-icon" aria-hidden="true">🏡</div>
+                <h3>Airbnbs</h3>
+                <p>
+                  Ideal when you want more space, a kitchen, or a local neighborhood feel.
+                </p>
+                <ul>
+                  <li>Search for host ratings above 4.8 and recent reviews</li>
+                  <li>Prioritize central neighborhoods over luxury views</li>
+                  <li>Check cleaning fees and transit access before booking</li>
+                </ul>
+              </div>
+
+              <div class="stay-card">
+                <div class="stay-icon" aria-hidden="true">💡</div>
+                <h3>Best-value move</h3>
+                <p>
+                  Travel during shoulder season for better prices without losing great weather.
+                </p>
+                <ul>
+                  <li>Opt for shoulder season instead of peak holiday weeks</li>
+                  <li>Use free cancellation when possible</li>
+                  <li>Prioritize location over extra hotel amenities</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="planner" class="section">
+          <div class="container planner-wrap">
+            <div>
+              <p class="eyebrow">Travel planner</p>
+              <h2>How to choose a vacation that feels both enjoyable and affordable</h2>
+            </div>
+
+            <div class="planner-grid">
+              <div class="step-card">
+                <span>01</span>
+                <h3>Set your vibe</h3>
+                <p>Beach, city, mountain, or cultural getaway—choose the energy you want first.</p>
+              </div>
+              <div class="step-card">
+                <span>02</span>
+                <h3>Balance budget</h3>
+                <p>Use a nightly budget range, then look for stays near transit or the waterfront.</p>
+              </div>
+              <div class="step-card">
+                <span>03</span>
+                <h3>Check value</h3>
+                <p>Prioritize neighborhoods with walkability, easy transport, and strong reviews.</p>
+              </div>
+              <div class="step-card">
+                <span>04</span>
+                <h3>Book smart</h3>
+                <p>Choose flexible dates and compare hotel vs. apartment costs before you commit.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section callout-section">
+          <div class="container callout-box">
+            <div>
+              <p class="eyebrow">What to look for</p>
+              <h2>Great vacation value is about more than just the price.</h2>
+            </div>
+            <p>
+              The best trip is usually a smart mix of location, comfort, and easy daily logistics—so you can enjoy your time instead of managing travel stress.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer id="contact" class="site-footer">
+        <div class="container footer-wrap">
+          <div>
+            <a href="#top" class="brand footer-brand" aria-label="TravelWell home">
+              <span class="brand-mark">TW</span>
+              <span>TravelWell</span>
+            </a>
+            <p>Vacation ideas built for comfort, affordability, and memorable experiences.</p>
+          </div>
+
+          <div class="footer-links" aria-label="Contact information">
+            <p><strong>Email:</strong> hello@travelwell.example</p>
+            <p><strong>Instagram:</strong> @travelwellguide</p>
+            <p><strong>Planning advice:</strong> Booking help available on request</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
